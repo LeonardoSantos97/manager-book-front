@@ -26,6 +26,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+
 // componentes do projeto
 import { NavComponent } from './components/nav/nav.component';
 
@@ -78,25 +79,25 @@ import { NavComponent } from './components/nav/nav.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     // Forms
-    FormsModule,
-    ReactiveFormsModule,
-    // Requisições http
-    HttpClientModule,
-    // Angular Material
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatCheckboxModule,
-    MatSnackBarModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatInputModule,
-    MatRadioModule,
-    MatTableModule,
-    MatIconModule,
-    MatListModule,
-    MatCardModule,
+    // FormsModule,
+    // ReactiveFormsModule,
+    // // Requisições http
+    // HttpClientModule,
+    // // Angular Material
+    // MatFormFieldModule,
+    // MatPaginatorModule,
+    // MatCheckboxModule,
+    // MatSnackBarModule,
+    // MatToolbarModule,
+    // MatSidenavModule,
+    // MatButtonModule,
+    // MatSelectModule,
+    // MatInputModule,
+    // MatRadioModule,
+    // MatTableModule,
+    // MatIconModule,
+    // MatListModule,
+    // MatCardModule,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
