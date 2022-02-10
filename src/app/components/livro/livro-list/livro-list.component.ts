@@ -14,7 +14,7 @@ export class LivroListComponent implements OnInit {
   ELEMENT_DATA: Livro[] = []
   FILTERED_DATA: Livro[] = []
 
-  displayedColumns: string[] = ['id', 'titulo', 'cliente', 'tecnico', 'dataAbertura', 'prioridade', 'status', 'acoes'];
+  displayedColumns: string[] = ['id', 'titulo', 'cliente', 'admin', 'dataCriacao', 'acoes'];
   dataSource = new MatTableDataSource<Livro>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -33,3 +33,24 @@ export class LivroListComponent implements OnInit {
       this.dataSource = new MatTableDataSource<Livro>(resposta);
       this.dataSource.paginator = this.paginator;
     })
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  
+  // orderByStatus(status: any): void{
+  //   let list: Livro[] = []
+  //   this.ELEMENT_DATA.forEach(element => {
+  //     if(element.status == status)
+  //       list.push(element)
+  //   });
+  //   this.FILTERED_DATA = list;
+  //   this.dataSource = new MatTableDataSource<Livro>(list);
+  //   this.dataSource.paginator = this.paginator;
+  // }
+
+
+}

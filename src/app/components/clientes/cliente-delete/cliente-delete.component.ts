@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Admin } from 'src/app/models/admin';
-import { AdminService } from 'src/app/services/admin.service';
+import { Cliente } from 'src/app/models/cliente';
+import { ClienteService } from 'src/app/services/cliente.service';
 
 @Component({
-  selector: 'app-admin-delete',
-  templateUrl: './admin-delete.component.html',
-  styleUrls: ['./admin-delete.component.css']
+  selector: 'app-cliente-delete',
+  templateUrl: './cliente-delete.component.html',
+  styleUrls: ['./cliente-delete.component.css']
 })
-export class AdminDeleteComponent implements OnInit {
+export class ClienteDeleteComponent implements OnInit {
 
-  admin: Admin = {
+  cliente: Cliente = {
     id:         '',
     nome:       '',
     usuario:      '',
@@ -22,28 +22,28 @@ export class AdminDeleteComponent implements OnInit {
   }
 
   constructor(
-    private service: AdminService,
+    private service: ClienteService,
     private toast:    ToastrService,
     private router:          Router,
     private route:   ActivatedRoute,
     ) { }
 
   ngOnInit(): void {
-    this.admin.id = this.route.snapshot.paramMap.get('id');
+    this.cliente.id = this.route.snapshot.paramMap.get('id');
     this.findById();
    }
 
   findById(): void {
-    this.service.findById(this.admin.id).subscribe(resposta => {
+    this.service.findById(this.cliente.id).subscribe(resposta => {
       resposta.perfis = []
-      this.admin = resposta;
+      this.cliente = resposta;
     })
   }
 
   delete(): void {
-    this.service.delete(this.admin.id).subscribe(() => {
-      this.toast.success('Admin deletado com sucesso', 'Delete');
-      this.router.navigate(['admins'])
+    this.service.delete(this.cliente.id).subscribe(() => {
+      this.toast.success('Cliente deletado com sucesso', 'Delete');
+      this.router.navigate(['clientes'])
     }, ex => {
       if(ex.error.errors) {
         ex.error.errors.forEach(element => {

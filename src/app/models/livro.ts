@@ -1,7 +1,7 @@
 export interface Livro {
     id?:                any;
-    dataAbertura?:   string;
-    dataFechamento?: string;
+    dataCriacao?:   string;
+    dataExclusao?: string;
     titulo:          string;
     admin:            any;
     cliente:            any;
