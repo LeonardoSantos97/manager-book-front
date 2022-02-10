@@ -47,7 +47,7 @@ import { LivroListComponent } from './components/livro/livro-list/livro-list.com
 import { LivroCreateComponent } from './components/livro/livro-create/livro-create.component';
 import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
-
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -99,7 +99,8 @@ import { LivroReadComponent } from './components/livro/livro-read/livro-read.com
       closeButton: true,
       progressBar: true
     }),
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
+    RouterModule //tentando resolver router link
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
