@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     senha: ''
   }
 
-  usuario = new FormControl(null, Validators.usuario);
+  usuario = new FormControl(null, Validators.required);
   senha = new FormControl(null, Validators.minLength(3));
 
   constructor(
