@@ -27,16 +27,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 
-// componentes do projeto
-import { NavComponent } from './components/nav/nav.component';
-import { HomeComponent } from './components/home/home.component';
-import { HeaderComponent } from './components/header/header.component';
-import { LivroListComponent } from './components/livro/livro-list/livro-list.component';
-import { AdminListComponent } from './components/admin/admin-list/admin-list.component';
-import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
-import { AdminDeleteComponent } from './components/admin/admin-delete/admin-delete.component';
-import { AdminUpdateComponent } from './components/admin/admin-update/admin-update.component';
-
 // Componentes do projeto
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
@@ -66,14 +56,6 @@ import { LivroReadComponent } from './components/livro/livro-read/livro-read.com
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    LivroListComponent,
-    AdminListComponent,
-    AdminCreateComponent,
-    AdminDeleteComponent,
-    AdminUpdateComponent,
-    NavComponent,
-    HomeComponent,
-    HeaderComponent,
     AdminListComponent,
     LoginComponent,
     AdminCreateComponent,
@@ -92,7 +74,7 @@ import { LivroReadComponent } from './components/livro/livro-read/livro-read.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    Forms
+    // Forms
     FormsModule,
     ReactiveFormsModule,
     // Requisições http
