@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { Tecnico } from 'src/app/models/admin';
-import { TecnicoService } from 'src/app/services/admin.service';
+import { Admin } from 'src/app/models/admin';
+import { AdminService } from 'src/app/services/admin.service';
 
 @Component({
   selector: 'app-admin-create',
@@ -21,9 +21,9 @@ export class AdminCreateComponent implements OnInit {
     dataCriacao: ''
   }
 
-  nome: FormControl =  new FormControl(null, Validators.minLength(3));
-  usuario: FormControl =        new FormControl(null, Validators.usuario);
-  senha: FormControl = new FormControl(null, Validators.minLength(3));
+  nome: FormControl =  new   FormControl(null, Validators.minLength(2));
+  usuario: FormControl = new FormControl(null, Validators.required);
+  senha: FormControl = new   FormControl(null, Validators.minLength(3));
 
 
   constructor(
@@ -37,7 +37,7 @@ export class AdminCreateComponent implements OnInit {
 
   create(): void {
     this.service.create(this.admin).subscribe(() => {
-      this.toast.success('Técnico cadastrado com sucesso', 'Cadastro');
+      this.toast.success('Usuário cadastrado com sucesso', 'Cadastro');
       this.router.navigate(['admins'])
     }, ex => {
       if(ex.error.errors) {
