@@ -32,6 +32,10 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LivroListComponent } from './components/livro/livro-list/livro-list.component';
+import { AdminListComponent } from './components/admin/admin-list/admin-list.component';
+import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
+import { AdminDeleteComponent } from './components/admin/admin-delete/admin-delete.component';
+import { AdminUpdateComponent } from './components/admin/admin-update/admin-update.component';
 
 // Componentes do projeto
 // import { NavComponent } from './components/nav/nav.component';
@@ -63,6 +67,10 @@ import { LivroListComponent } from './components/livro/livro-list/livro-list.com
     HomeComponent,
     HeaderComponent,
     LivroListComponent,
+    AdminListComponent,
+    AdminCreateComponent,
+    AdminDeleteComponent,
+    AdminUpdateComponent,
     // NavComponent,
     // HomeComponent,
     // HeaderComponent,
