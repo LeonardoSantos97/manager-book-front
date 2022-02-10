@@ -47,7 +47,7 @@ export class LivroUpdateComponent implements OnInit {
 
   update(): void {
     this.livroService.update(this.livro).subscribe(resposta => {
-      this.toastService.success('Livro atualizado com sucesso', 'Livro Atualizado');
+      this.toastService.success('Livro atualizado com sucesso', 'Atualizar Livro');
       this.router.navigate(['livros']);
     }, ex => {
       console.log(ex);
