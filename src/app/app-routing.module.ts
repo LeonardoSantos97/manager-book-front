@@ -5,10 +5,10 @@ import { LivroCreateComponent } from './components/livro/livro-create/livro-crea
 import { LivroListComponent } from './components/livro/livro-list/livro-list.component';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
 import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
-import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
-import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
-import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
-import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
+import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
+import { ClienteListComponent } from './components/clientes/cliente-list/cliente-list.component';
+import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NavComponent } from './components/nav/nav.component';
