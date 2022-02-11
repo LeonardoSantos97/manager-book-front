@@ -37,18 +37,23 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
 import { NgxMaskModule } from 'ngx-mask';
+//import { AdminUpdateComponent } from './components/admin/admin-update/admin-update.component';
 import { AdminUpdateComponent } from './components/admin/admin-update/admin-update.component';
 import { AdminDeleteComponent } from './components/admin/admin-delete/admin-delete.component';
-import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
-import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
-import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
-import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
+import { ClienteListComponent } from './components/clientes/cliente-list/cliente-list.component';
+import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
 import { LivroListComponent } from './components/livro/livro-list/livro-list.component';
 import { LivroCreateComponent } from './components/livro/livro-create/livro-create.component';
 import { LivroUpdateComponent } from './components/livro/livro-update/livro-update.component';
 import { LivroReadComponent } from './components/livro/livro-read/livro-read.component';
 import {RouterModule} from '@angular/router';
 
+// import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
+// import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+//import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+// import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 
 @NgModule({
   declarations: [
