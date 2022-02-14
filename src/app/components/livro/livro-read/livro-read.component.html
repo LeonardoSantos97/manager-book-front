@@ -1,0 +1,33 @@
+<div class="container mat-elevation-z8">
+    <h1 class="full-width">Visualizar de livro</h1>
+    <img class="full-width" src="assets/img/livro-create.svg" alt="Livro image">
+ 
+    <form class="form">
+       <mat-form-field class="full-width" appearance="outline">
+         <mat-label>Título do livro</mat-label>
+         <input 
+         [disabled]="true"
+         [(ngModel)]="livro.titulo"
+         name="titulo"
+         matInput 
+         placeholder="Ex.">
+       </mat-form-field>
+     </form>
+ 
+     
+     <div class="cliente">
+       <mat-form-field class="full-width" appearance="outline">
+          <mat-label>CLIENTE ({{ livro.nomeCliente }})</mat-label>
+          <mat-select 
+          [disabled]="true"
+          [(ngModel)]="livro.cliente"
+          name="cliente">
+            <mat-option>{{ livro.nomeCliente }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+     </div>
+ 
+     <button routerLink="../../" class="full-width mat-elevation-z4" mat-stroked-button color="warn">Retornar</button>
+ 
+     <p class="full-width">Desnvolvido por Leonardo Santos</p>
+ </div>
