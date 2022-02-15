@@ -17,6 +17,7 @@ export class LivroReadComponent implements OnInit {
     cliente:     '',
     nomeCliente: '',
     nomeAdmin: '',
+    autor: '',
   }
 
   constructor(
