@@ -14,6 +14,19 @@
          placeholder="Ex. O Pequeno Príncipe ">
        </mat-form-field>
      </form>
+
+     <form class="form">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Nome do Autor</mat-label>
+        <input 
+        [(ngModel)]="livro.autor"
+        name="titulo"
+        [formControl]="autor"
+        required
+        matInput 
+        placeholder="Ex. Machado de Assis">
+      </mat-form-field>
+    </form>
  
      
      <!-- <div class="admin">
@@ -31,7 +44,7 @@
  
      <div class="admin">
         <mat-form-field class="full-width" appearance="outline">
-           <mat-label>TÉCNICO ({{ livro.nomeAdmin }})</mat-label>
+           <mat-label>Admin ({{ livro.nomeAdmin }})</mat-label>
            <mat-select 
            [(ngModel)]="livro.admin"
            name="admin"

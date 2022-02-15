@@ -13,7 +13,8 @@ export class AdminListComponent implements OnInit {
 
   ELEMENT_DATA: Admin[] = []
 
-  displayedColumns: string[] = ['id', 'nome', 'usuario', 'senha', 'acoes'];
+  // displayedColumns: string[] = ['id', 'nome', 'usuario', 'senha', 'acoes'];
+  displayedColumns: string[] = ['id', 'nome', 'usuario', 'acoes'];
   dataSource = new MatTableDataSource<Admin>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;

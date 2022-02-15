@@ -13,6 +13,18 @@
          placeholder="Ex.">
        </mat-form-field>
      </form>
+
+     <form class="form">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Nome do Autor</mat-label>
+        <input 
+        [disabled]="true"
+        [(ngModel)]="livro.autor"
+        name="autor"
+        matInput 
+        placeholder="Ex. Machado de Assis">
+      </mat-form-field>
+    </form>
  
      
      <div class="cliente">

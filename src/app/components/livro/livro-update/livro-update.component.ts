@@ -22,7 +22,7 @@ export class LivroUpdateComponent implements OnInit {
     cliente:     '',
     nomeCliente: '',
     nomeAdmin: '',
-    //author
+    autor: '',
   }
 
   clientes: Cliente[] = []
@@ -31,6 +31,7 @@ export class LivroUpdateComponent implements OnInit {
   titulo:     FormControl = new FormControl(null, [Validators.required]);
   admin:    FormControl = new FormControl(null, [Validators.required]);
   cliente:    FormControl = new FormControl(null, [Validators.required]);
+  autor:    FormControl = new FormControl(null, [Validators.required]);
 
   constructor(
     private livroService: LivroService,

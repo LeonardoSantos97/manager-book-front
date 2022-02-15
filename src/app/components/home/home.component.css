@@ -7,3 +7,7 @@ card {
  img {
     height: 20rem;
  }
+
+ p{
+    text-align: center;
+ }
