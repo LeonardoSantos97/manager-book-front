@@ -33,6 +33,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AdminListComponent } from './components/admin/admin-list/admin-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegistrarComponent } from './components/registrar/registrar.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { AdminCreateComponent } from './components/admin/admin-create/admin-create.component';
@@ -63,6 +64,7 @@ import {RouterModule} from '@angular/router';
     HeaderComponent,
     AdminListComponent,
     LoginComponent,
+    RegistrarComponent,
     AdminCreateComponent,
     AdminUpdateComponent,
     AdminDeleteComponent,

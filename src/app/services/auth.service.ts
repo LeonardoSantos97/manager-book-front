@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { API_CONFIG } from '../config/api.config';
+import { Cliente } from '../models/cliente';
 import { Credenciais } from '../models/credenciais';
 
 @Injectable({
@@ -22,6 +23,14 @@ export class AuthService {
 
   successfulLogin(authToken: string) {
     localStorage.setItem('token', authToken);
+  }
+
+  successfulResgistrar(authToken: string) {
+    localStorage.setItem('token', authToken);
+  }
+
+  registrar(clientes: Cliente){
+    return this.http.post<Cliente>(`${API_CONFIG.baseUrl}/clientes`, clientes);
   }
 
   isAuthenticated() {

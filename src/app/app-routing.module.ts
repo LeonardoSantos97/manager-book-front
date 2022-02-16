@@ -16,9 +16,11 @@ import { AdminCreateComponent } from './components/admin/admin-create/admin-crea
 import { AdminDeleteComponent } from './components/admin/admin-delete/admin-delete.component';
 import { AdminListComponent } from './components/admin/admin-list/admin-list.component';
 import { AdminUpdateComponent } from './components/admin/admin-update/admin-update.component';
+import { RegistrarComponent } from './components/registrar/registrar.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'registrar', component: RegistrarComponent },
   {
     path: '', component: NavComponent, canActivate: [AuthGuard], children: [
       { path: 'home', component: HomeComponent },
