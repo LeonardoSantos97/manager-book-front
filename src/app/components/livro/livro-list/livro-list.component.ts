@@ -14,7 +14,7 @@ export class LivroListComponent implements OnInit {
   ELEMENT_DATA: Livro[] = []
   FILTERED_DATA: Livro[] = []
 
-  displayedColumns: string[] = ['id', 'titulo', 'cliente', 'admin', 'dataCriacao', 'acoes'];
+  displayedColumns: string[] = ['id', 'titulo', 'autor', 'cliente', 'admin', 'dataCriacao', 'acoes'];
   dataSource = new MatTableDataSource<Livro>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
