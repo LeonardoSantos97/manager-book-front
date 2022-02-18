@@ -13,10 +13,10 @@ export class LivroReadComponent implements OnInit {
 
   livro: Livro = {
     titulo:      '',
-    admin:     '',
-    cliente:     '',
-    nomeCliente: '',
-    nomeAdmin: '',
+    // admin:     '',
+    // cliente:     '',
+    // nomeCliente: '',
+    // nomeAdmin: '',
     autor: '',
   }
 

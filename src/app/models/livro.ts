@@ -4,8 +4,8 @@ export interface Livro {
     dataExclusao?: string;
     titulo:          string;
     autor:          string;
-    admin:            any;
-    cliente:            any;
-    nomeCliente:     string;
-    nomeAdmin:     string;
+    // admin:            any;
+    // cliente:            any;
+    // nomeCliente:     string;
+    // nomeAdmin:     string;
  }

@@ -18,10 +18,10 @@ export class LivroUpdateComponent implements OnInit {
 
   livro: Livro = {
     titulo:      '',
-    admin:     '',
-    cliente:     '',
-    nomeCliente: '',
-    nomeAdmin: '',
+    // admin:     '',
+    // cliente:     '',
+    // nomeCliente: '',
+    // nomeAdmin: '',
     autor: '',
   }
 
@@ -29,8 +29,8 @@ export class LivroUpdateComponent implements OnInit {
   admins: Admin[] = []
 
   titulo:     FormControl = new FormControl(null, [Validators.required]);
-  admin:    FormControl = new FormControl(null, [Validators.required]);
-  cliente:    FormControl = new FormControl(null, [Validators.required]);
+  // admin:    FormControl = new FormControl(null, [Validators.required]);
+  // cliente:    FormControl = new FormControl(null, [Validators.required]);
   autor:    FormControl = new FormControl(null, [Validators.required]);
 
   constructor(

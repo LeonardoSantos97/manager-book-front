@@ -18,10 +18,10 @@ export class LivroCreateComponent implements OnInit {
 
   livro: Livro = {
     titulo:      '',
-    admin:     '',
-    cliente:     '',
-    nomeCliente: '',
-    nomeAdmin: '',
+    // admin:     '',
+    // cliente:     '',
+    // nomeCliente: '',
+    // nomeAdmin: '',
     autor: '',
   }
 
@@ -29,21 +29,21 @@ export class LivroCreateComponent implements OnInit {
   admins: Admin[] = []
 
   titulo:     FormControl = new FormControl(null, [Validators.required]);
-  admin:    FormControl = new FormControl(null, [Validators.required]);
-  cliente:    FormControl = new FormControl(null, [Validators.required]);
+  // admin:    FormControl = new FormControl(null, [Validators.required]);
+  // cliente:    FormControl = new FormControl(null, [Validators.required]);
   autor:    FormControl = new FormControl(null, [Validators.required]);
 
   constructor(
     private livroService: LivroService,
-    private clienteService: ClienteService,
-    private adminService: AdminService,
+    // private clienteService: ClienteService,
+    // private adminService: AdminService,
     private toastService:    ToastrService,
     private router: Router,
   ) { }
 
   ngOnInit(): void {
-    this.findAllClientes();
-    this.findAllAdmins();
+    // this.findAllClientes();
+    // this.findAllAdmins();
   }
 
   create(): void {
@@ -57,17 +57,17 @@ export class LivroCreateComponent implements OnInit {
     })
   }
 
-  findAllClientes(): void {
-    this.clienteService.findAll().subscribe(resposta => {
-      this.clientes = resposta;
-    })
-  }
+  // findAllClientes(): void {
+  //   this.clienteService.findAll().subscribe(resposta => {
+  //     this.clientes = resposta;
+  //   })
+  // }
 
-  findAllAdmins(): void {
-    this.adminService.findAll().subscribe(resposta => {
-      this.admins = resposta;
-    })
-  }
+  // findAllAdmins(): void {
+  //   this.adminService.findAll().subscribe(resposta => {
+  //     this.admins = resposta;
+  //   })
+  // }
   
 
 }
